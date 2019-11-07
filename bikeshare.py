@@ -219,6 +219,7 @@ def display_raw_data(city, month, day):
 
 
 def main():
+    # Use a while loop to call the functions and get user input
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
