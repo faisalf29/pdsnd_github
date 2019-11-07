@@ -12,6 +12,7 @@ import time
 import pandas as pd
 import numpy as np
 
+# Dictionary defining city names to city data files
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -220,6 +221,7 @@ def display_raw_data(city, month, day):
 
 
 def main():
+    # Use a while loop to call the functions and get user input
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
