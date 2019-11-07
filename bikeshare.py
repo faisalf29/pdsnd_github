@@ -7,6 +7,7 @@ between three large cities: Chicago, New York City and Washington, DC.
 Faisal Fayyaz
 """
 
+# Import time, pandas and numpy libraries
 import time
 import pandas as pd
 import numpy as np
@@ -229,6 +230,7 @@ def main():
         user_stats(df)
         display_raw_data(city, month, day)
 
+        # Ask user if they would like to start another analysis
         restart = input('\nWould you like to restart? (yes/no): ')
         if restart.lower() != 'yes':
             break
